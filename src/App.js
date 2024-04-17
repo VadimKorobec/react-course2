@@ -1,12 +1,7 @@
 import "./App.scss";
-import CustomForm from "./Form";
 
 function App() {
-  return (
-    <div className="app">
-      <CustomForm />
-    </div>
-  );
+  return <div className="app"></div>;
 }
 
 export default App;
