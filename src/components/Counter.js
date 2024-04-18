@@ -1,3 +1,6 @@
+import { connect } from "react-redux";
+import * as actions from "../actions";
+
 const Counter = ({ counter, inc, dec, rnd }) => {
   return (
     <div className="jumbotron">
@@ -15,4 +18,10 @@ const Counter = ({ counter, inc, dec, rnd }) => {
   );
 };
 
-export default Counter;
+const mapStateToProps = (state) => {
+  return {
+    counter: state.value,
+  };
+};
+
+export default connect(mapStateToProps, actions)(Counter);
