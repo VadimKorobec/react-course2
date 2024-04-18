@@ -1,7 +1,7 @@
-import "./App.scss";
+import Counter from "./Counter";
 
-function App() {
-  return <div className="app"></div>;
-}
+const App = () => {
+  return <Counter />;
+};
 
 export default App;
